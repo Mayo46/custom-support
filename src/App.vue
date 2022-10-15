@@ -1,28 +1,15 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import Navbar from './components/Navbar.vue'
+import {RouterView } from 'vue-router'
+import Navbar from '@/layouts/Navbar.vue'
+import Footer from '@/layouts/Footer.vue'
+components:{
+  Navbar,
+  Footer
+}
 </script>
 
 <template>
     <Navbar/>
     <router-view/>
-    <HelloWorld/>
+    <Footer/>
 </template>
-
-<style lang="scss">
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   color: #2c3e50;
-// }
-
-// html,
-// body {
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-//   height: 100%;
-// }
-</style>

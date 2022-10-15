@@ -11,6 +11,8 @@ $color-primary: #01A4B7;
 $color-secondary : #3D4D62;
 $color-white: #ffffff;
 $color-blue-lagoon: #006B6E;
+$color-cyan-blue: #445667;
+$color-green: #1ECB40 ;
 
 $primary: #2ba8f5;
 $success: #28c76f;
@@ -138,6 +140,14 @@ $img-max-height-40:40px;
 $img-max-width-80:80%;
 
 /*========================================================
-        Element Width
+        Element Width in Percentage
 =========================================================*/
+$element-width-100:100%;
 $element-width-50:50%;
+
+
+/*========================================================
+        Element Height 
+=========================================================*/
+$element-height-80:80px;
+$element-height-50:50px;
