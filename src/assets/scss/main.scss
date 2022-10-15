@@ -1,0 +1,23 @@
+/*=========================================================================================
+  File Name: main.scss
+  Description: Main scss file. Imports other scss partials from 'saas' folder
+
+==========================================================================================*/
+
+@import 'abstracts/variables';
+
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+
+// @import 'custom';
+
