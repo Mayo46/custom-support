@@ -1,23 +1,85 @@
-.banner-heading{
-  color:$purple;
-  font-family:  $font-family-primary;
-  font-weight:  $font-weight-600;
-  font-size: $font-size-45;
-  text-shadow: -3px 2px 5px $text-shadow-primary;
-  text-transform: $text-transform-capitalize;
-}
 
-.about-banner-heading{
-  color:$purple;
-  font-family:  $font-family-primary;
-  font-weight: $font-weight-600;
-  font-size:  $font-size-50;
-  text-shadow: -3px 2px 5px $text-shadow-primary;
-  text-transform: $text-transform-capitalize;
-}
-.about-banner-description{
-  color: $black;
-  font-family:  $font-family-primary;
-  font-weight:$font-weight-400;
-  font-size: $font-size-16;
-}
+  .header {
+    background: url("/assets/hero.png");
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-position-x: center;
+    height: $element-height-690;
+    &-section {
+      width: $element-width-45;
+    }
+    &-title {
+      font-size: $font-size-40;
+      color: $color-white;
+      text-align: left;
+      font-weight: $font-weight-bold;
+    }
+    &-description {
+      color: $color-white;
+      font-size: $font-size-16;
+    }
+    &-button {
+      width: 206px;
+      height: $element-height-50;
+      color: $color-white;
+      background-color: $color-primary;
+      border: unset;
+      border-radius: 3px;
+      margin-top: 20px;
+      &:hover {
+        cursor: pointer;
+        background-color: $color-blue-lagoon;
+        border: 3px solid $color-green;
+      }
+    }
+    &-features {
+      width: $element-width-30;
+      margin-left: 5%;
+      &-text {
+        color: $color-white;
+        margin-left:8px
+      }
+    }
+  }
+  hr {
+    height: 3px;
+    background-color: $color-primary;
+    border: none;
+    width: 8%;
+    margin: 10px 0;
+  }
+  .mobile-view {
+    display: none;
+  }
+  @media only screen and (max-width: 425px) {
+    .header-section, .header-features {
+      width: $element-width-90;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      padding: 20px;
+      &-title {
+        font-size: $font-size-22;
+        font-weight: $font-weight-bold;
+      }
+      &-features {
+        width: $element-width-50;
+      }
+    }
+    hr{
+      width: 13%;
+    }
+    .desktop-view {
+      display: none;
+    }
+    .mobile-view {
+      display: block;
+    }
+    
+  }
+  
