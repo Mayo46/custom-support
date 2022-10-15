@@ -14,3 +14,7 @@
   const footerItems = ['Imprint', 'Data Security', 'Conditions', 'Cookies', 'Custom Support'];
 </script>
 
+<style scoped lang="scss">
+  @import "@/assets/scss/main";
+
+</style>
