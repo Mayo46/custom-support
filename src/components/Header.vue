@@ -12,7 +12,7 @@
           {{ btnText }}
         </button>
       </div>
-      <div class="header__features">
+      <div class="header-features">
         <p v-for="(item,index) in headerItems" :key="index">
             <img :src="item.icon" />
             <span class="header-features-text"> {{ item.text }}</span>
@@ -38,7 +38,7 @@
        text: 'EU-wide customs coverage',
        icon: '/assets/tick.png'
    },
-{
+  {
        text: 'Online and real-time control of customs processes',
        icon: '/assets/tick.png'
    }

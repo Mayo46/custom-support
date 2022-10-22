@@ -7,6 +7,7 @@
     height: $element-height-690;
     &-section {
       width: $element-width-45;
+      margin-left: 10px;
     }
     &-title {
       font-size: $font-size-40;
@@ -67,7 +68,7 @@
         font-weight: $font-weight-bold;
       }
       &-features {
-        width: $element-width-50;
+        width: $element-width-90;
       }
     }
     hr{

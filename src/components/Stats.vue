@@ -38,7 +38,7 @@ const statsData = [
 <style scoped lang="scss">
   @import "@/assets/scss/main";
   .stats {
-  background-color: #006B6E;
+  background-color: $color-blue-lagoon;
   min-height: 438px;
   display: flex;
   justify-content: center;
@@ -46,14 +46,14 @@ const statsData = [
   flex-direction: column;
   &-title {
     font-size: 40px;
-    font-weight: bold;
-    color: white;
+    font-weight: $font-weight-bold;
+    color: $color-white;
   }
   &-detail {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $color-white;
     &-setion {
       display: flex;
       justify-content: center;
@@ -67,29 +67,29 @@ const statsData = [
       }
     }
     &-number {
-      font-size: 50px;
-      font-weight: bold;
+      font-size: $font-size-50;
+      font-weight: $font-weight-bold;
     }
     &-text {
-      font-size: 20px;
-      font-weight: bold;
+      font-size: $font-size-20;
+      font-weight: $font-weight-bold;
       text-align: center;
     }
   }
   &-button {
     width: 151px;
     height: 50px;
-    color: white;
-    background-color: #01A4B7;
+    color: $color-white;
+    background-color: $color-primary;
     border: unset;
     border-radius: 3px;
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold;
     &:hover {
       cursor: pointer;
-      color: #01A4B7;
-      background-color: white;
+      color: $color-primary;
+      background-color: $color-white;
       border: 3px solid $color-green;
     }
   }
@@ -97,7 +97,7 @@ const statsData = [
 
 hr {
   height: 3px;
-  background-color: #01A4B7;
+  background-color: $color-primary;
   border: none;
   width: 5%;
   margin: 10px auto;

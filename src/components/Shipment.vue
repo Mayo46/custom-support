@@ -1,11 +1,11 @@
 <template>
-    <div class="gallery">
-      <div class="gallery__item left">
-        <img class="gallery__item__graphic" src="/assets/dummy.png" />
-        <div class="gallery__item__content left-content">
-          <span class="gallery__item__content__heading"> Lorem ipsum dolor sit amet  </span>
+    <div class="shipment">
+      <div class="shipment-item left-section">
+        <img class="shipment-item-image" src="/assets/dummy.png" />
+        <div class="shipment-item-content left-content">
+          <span class="shipment-item-content-title"> Lorem ipsum dolor sit amet  </span>
           <hr>
-          <p class="gallery__item__content__detail">
+          <p class="shipment-item-content-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -13,18 +13,18 @@
           </p>
         </div>
       </div>
-      <div class="gallery__item right">
-        <img class="gallery__item__graphic" src="/assets/dummy.png" />
-        <div class="gallery__item__content right-content">
-          <span class="gallery__item__content__heading"> Lorem ipsum dolor sit amet  </span>
+      <div class="shipment-item right-section">
+        <img class="shipment-item-image" src="/assets/dummy.png" />
+        <div class="shipment-item-content right-content">
+          <span class="shipment-item-content-title"> Lorem ipsum dolor sit amet  </span>
           <hr>
-          <p class="gallery__item__content__detail">
+          <p class="shipment-item-content-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
           </p>
-          <button class="gallery__item__content__btn">
+          <button class="shipment-item-content-btn">
             More information
           </button>
         </div>
@@ -39,38 +39,39 @@
   
   <style scoped lang="scss">
   @import "@/assets/scss/main";
-  .gallery {
-    &__item {
+  .shipment {
+    &-item {
       display: flex;
       justify-content: center;
       align-items: center;
-      &__graphic {
+      &-image {
         width: 50%;
       }
-      &__content {
+      &-content {
         display: flex;
         flex-direction: column;
-        &__heading {
-          color: #3D4D62;
-          font-weight: bold;
-          font-size: 30px;
+        padding-left:6%;
+        &-title {
+          color: $color-secondary;
+          font-weight: $font-weight-bold;
+          font-size: $font-size-30;
         }
-        &__detail {
-          font-size: 16px;
+        &-description {
+          font-size: $font-size-16;
           width: 70%;
-          color: #3D4D62;
+          color: $color-secondary;
           text-align: left;
         }
-        &__btn {
+        &-btn {
           width: 197px;
           height: 50px;
           color: white;
-          background-color: #01A4B7;
+          background-color: $color-primary;
           border: unset;
           border-radius: 3px;
           margin-top: 20px;
-          font-size: 18px;
-          font-weight: bold;
+          font-size: $font-size-18;
+          font-weight: $font-weight-bold;
           &:hover {
             cursor: pointer;
             background-color: $color-blue-lagoon;
@@ -81,22 +82,19 @@
     }
   }
   
-  
-  .right {
-    flex-direction: row-reverse;
-  }
-  
   .left-content {
     margin-right: 5%;
-    text-align: right;
     hr,
-    .gallery__item__content__btn {
-      align-self: center;
+    .shipment-item-content-btn {
+      align-self: start;
     }
-    .gallery__item__content__detail {
-      align-self: end;
-      width: 65%;
+    .shipment-item-content-description {
+      align-self: start;
+      width: $element-width-65;
     }
+  }
+  .right-section {
+    flex-direction: row-reverse;
   }
   
   .right-content {
@@ -105,33 +103,33 @@
   
   hr {
     height: 3px;
-    background-color: #01A4B7;
+    background-color: $color-primary;
     border: none;
     width: 7%;
     margin: 10px 0;
   }
   
   @media only screen and (max-width: 768px) {
-    .gallery__item {
+    .shipment-item {
       flex-direction: column;
-      &__graphic {
+      &-image {
         width: 100%;
       }
-      &__content {
+      &-content {
         justify-content: center;
         align-items: center;
         margin: 10px auto;
         padding: 20px;
-        &__heading {
+        &-title {
           text-align: center;
         }
-        &__detail {
+        &-description {
           width: 100%;
         }
       }
     }
     .left-content {
-      .gallery__item__content__detail {
+      .shipment-item-content-description {
         align-self: center;
         width: 100%;
       }
