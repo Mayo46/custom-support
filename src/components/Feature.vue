@@ -2,8 +2,6 @@
  <div class="feature">
      <span class="feature-title">{{ featureTitle }}</span>
      <button class="feature-button">{{ btnText }}</button>
-
-
  </div>
  <hr>
  <div class="feature-categories">
@@ -69,8 +67,9 @@ const featureItems = [
     &-title{
      color: $color-secondary;
      font-weight: $font-weight-bold;
-     font-size: $font-size-27;
+     font-size: $font-size-25;
      width: 889px;
+    
     }
     &-button {
       width: 151px;
@@ -92,18 +91,17 @@ const featureItems = [
     margin:0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
- 
     &-item{
-        // width:33%
         padding: 10px;
     }
-    &-title{
+    &-item-title{
         color: $color-secondary;
         font-weight: $font-weight-bold;
         font-size: $font-size-14;
         &:hover {
-        cursor: pointer;
-        color: #01A4B7;
+            cursor: pointer;
+            color: $color-primary;
+ 
       }
     }
 }
@@ -119,14 +117,14 @@ hr {
 }
 @media only screen and (max-width: 768px) {
     .shipping-logo {
-      width:400px;
+      width:333px;
       height:300px;
     }
     .feature-categories{
         display: flex;
         flex-direction: column;
         &-item{
-            width:100%
+            width:auto;
         }
         &-item-description{
             width:75%;
@@ -136,8 +134,11 @@ hr {
       flex-direction: column;
       justify-content: center;
       &-title{
-        width: 400px;
+        width: 300px;
         }
+      &-button {
+       width:300px;  
+      }  
     }
    
     

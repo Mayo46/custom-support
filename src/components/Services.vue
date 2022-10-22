@@ -145,7 +145,7 @@ hr {
         display: block;
 
         &-item-title {
-            padding: 0 12px;
+            padding-left:12px;
         }
 
         &-item-description {

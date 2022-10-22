@@ -3,7 +3,7 @@
       <div class="shipment-item left-section">
         <img class="shipment-item-image" src="/assets/dummy.png" />
         <div class="shipment-item-content left-content">
-          <span class="shipment-item-content-title"> Lorem ipsum dolor sit amet  </span>
+          <span class="shipment-item-content-title"> {{ title }}  </span>
           <hr>
           <p class="shipment-item-content-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -16,7 +16,7 @@
       <div class="shipment-item right-section">
         <img class="shipment-item-image" src="/assets/dummy.png" />
         <div class="shipment-item-content right-content">
-          <span class="shipment-item-content-title"> Lorem ipsum dolor sit amet  </span>
+          <span class="shipment-item-content-title">  {{ title  }} </span>
           <hr>
           <p class="shipment-item-content-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -25,7 +25,7 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
           </p>
           <button class="shipment-item-content-btn">
-            More information
+            {{ btnText }}
           </button>
         </div>
       </div>
@@ -34,7 +34,8 @@
   </template>
   
   <script setup>
- 
+ const title="Lorem ipsum dolor sit amet";
+ const btnText="More information";
   </script>
   
   <style scoped lang="scss">
@@ -132,6 +133,9 @@
       .shipment-item-content-description {
         align-self: center;
         width: 100%;
+      }
+      hr{
+        align-self: center;
       }
   
     }

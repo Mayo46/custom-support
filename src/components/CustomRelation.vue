@@ -29,7 +29,7 @@
   height:600px;
  &-background{
     background: transparent url("assets/background-green.png") 0% 0% no-repeat padding-box;
-    opacity: 0.3;
+    opacity: 1;
     width: 50%;
     height: 600px;
  } 
